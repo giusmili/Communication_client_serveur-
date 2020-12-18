@@ -16,7 +16,7 @@ Nous allons mettre en place la communication client serveur, par la création d'
 
 ## insertion des données
 
-![table](./asset/table.png "table")
+![table](./asset/table.PNG "table")
 
 ## Connection php pour la base de donnée par l'objet **PDO**
 ```php
