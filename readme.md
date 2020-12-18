@@ -61,7 +61,7 @@ Nous allons mettre en place la communication client serveur, par la création d'
 ```php
     $bdd = new PDO('mysql:host=localhost;dbname=product', 'root', 'root', array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$pdo_options));
 ```
-## Pour voir le résultat finale dans le navigateur :
+## Résultat finale dans le navigateur :
 
 ![page](./asset/page.PNG "machine")
 
