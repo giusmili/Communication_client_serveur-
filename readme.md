@@ -63,7 +63,7 @@ Nous allons mettre en place la communication client serveur, par la création d'
 ```
 ## Pour voir le résultat finale dans le navigateur :
 
-![table](./asset/page.PNG "table")
+![page](./asset/page.PNG "machine")
 
 
 
