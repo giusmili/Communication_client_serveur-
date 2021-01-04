@@ -9,7 +9,8 @@
     
     // On affiche chaque entrée une à une
     while ($donnee = $reponse->fetch()){
-    echo '<h2>Nom '.$donnee['nom'].'</h2>
+    echo '<h2>'.$donnee['nom'].'</h2>
+    <figure>
         <figcaption>
             <ul>
                 <li>Marque '.$donnee['marque'].'</li>
@@ -19,7 +20,8 @@
                 <li><img src="'.$donnee['image'].'" alt="produit"></li>
 
             </ul>
-        </figcaption>';
+        </figcaption>
+    </figure>';
          
 
      

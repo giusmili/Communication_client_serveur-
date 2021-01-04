@@ -1,4 +1,3 @@
-/* reset */
 html{
     font-size: 62.5%;
 }
@@ -6,7 +5,7 @@ body{
     font: 1.6rem sans-serif;
     margin: 0;
 }
-h1,h2,h3,ul,p,figure{
+h1,h2,h3,ul,li,figure{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,63 +16,64 @@ header{
     display: grid;
     align-items: center;
     text-align: center;
-    background-color: #3498db;
+    background: #3498db;
+    color: #fafafa;
     margin-bottom: 6.0rem;
 }
 header h1{
     font-size: 5.0rem;
-    -webkit-text-stroke: .2rem #222;
-    font: 900 7vmin/15vh sans-serif;
-    color: #fff;
+    -webkit-text-stroke: 2px #222;
+    font: 900 7vmin/10vh sans-serif;
+    pointer-events: none;
 }
 main h2{
     line-height: 6.0rem;
     text-align: center;
     font-weight: 100;
+   
 }
 main h2::before{
     content: '\01F4BB';
-    margin-left: .3rem;
+    margin-right: .3rem;
     vertical-align: top;
 }
 main figure{
     max-width: 50rem;
-    font-weight: 100;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.0rem;
 }
-main figure img{
-    display: inline-block;
-    max-width: 100%;
-}
+
 figure figcaption ul{
+    
     display: grid;
+  
     padding: 1rem;
-    grid-template-columns: repeat(1, 1fr);/*auto*/
+    grid-template-columns: repeat(1, 1fr); /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
+    background-color: #fafafa;
     grid-auto-flow: dense;
     box-shadow: 0 0 1rem rgba(0,0,0,0.8);
 }
 figure figcaption ul li{
     line-height: 4.5rem;
-    background-color: rgba(52, 152, 219, 1.0);
+    background: rgba(52, 152, 219,1.0);
     padding: .5rem;
 }
 figure figcaption ul li::before{
-    content:'\2713';
-    margin-right: 0.3rem;
+    content: '\2713';
+    margin-right: .3rem;
     vertical-align: middle;
 }
 figure figcaption ul li:nth-child(2n + 1){
-    background-color: rgba(52, 152, 219, 0.6);
+    background: rgba(52, 152, 219,0.6);
 }
 figure figcaption ul li:last-child{
-    background-color: #fff;
+    background: #fff;
     text-align: center;
 }
 figure figcaption ul li:last-child::before{
-    content: "";
+    content:"";
 }
 footer{
     text-align: center;
-    margin: 0 0 1rem;
+    margin: 0 0 1.0rem;
 }

@@ -1,4 +1,4 @@
 <?php
-    const titre ="Product";
+    const titre ="Vos produits en ligne";
     $copy = date('Y');
 ?>
