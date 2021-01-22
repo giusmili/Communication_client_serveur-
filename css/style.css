@@ -13,6 +13,7 @@ h1,h2,h3,ul,p,figure{
 }
 
 /* theme */
+
 header{
     display: grid;
     align-items: center;
@@ -36,6 +37,21 @@ main h2::before{
     margin-left: .3rem;
     vertical-align: top;
 }
+main .primary-list{
+   max-width: 50rem;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    background-color: #fafafa;
+    border: solid .1rem transparent;
+    box-shadow: 0 0 1.0rem rgba(0,0,0,0.2);
+}
+main .primary-list li{
+    padding: 0.8rem;
+}
+main .primary-list li:nth-child(2n + 1){
+    background-color: #3498db;
+    color: #fff;
+}
 main figure{
     max-width: 50rem;
     font-weight: 100;
@@ -58,6 +74,7 @@ figure figcaption ul li{
     background-color: rgba(52, 152, 219, 1.0);
     padding: .5rem;
 }
+
 figure figcaption ul li::before{
     content:'\2713';
     margin-right: 0.3rem;
@@ -73,6 +90,7 @@ figure figcaption ul li:last-child{
 figure figcaption ul li:last-child::before{
     content: "";
 }
+
 footer{
     text-align: center;
     margin: 0 0 1rem;
