@@ -3,7 +3,7 @@
     if(function_exists($_GET['method'])){
         $_GET['method']();
 
-    }
+    } 
     function getUsers(){
         
     try{// On se connecte à MySQL
