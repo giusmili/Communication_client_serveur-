@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 };
 //requete
 request.open("GET", "traitement.php?method=getUsers");
-request.send();
+request.send(null);
 })
