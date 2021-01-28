@@ -28,7 +28,7 @@
         else{
             $_SESSION['nom'] = $_POST['login'];
             print '<p class="success">Bonjour : '.$_SESSION['nom'].'</p>';
-            print '<p><a href="success_login.php">Poursuivre vers vos informations</a></p>';
+            print '<p class="success"><a href="success_login.php">Poursuivre vers vos informations</a></p>';
         }
     }
 ?>

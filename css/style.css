@@ -137,6 +137,9 @@ section input[type="submit"]{
     color: #fff;
     cursor: pointer;
 }
+.warning,.success{
+    text-align: center;
+}
 footer{
     text-align: center;
     margin: 0 0 1rem;

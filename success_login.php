@@ -12,7 +12,7 @@
 </header>
 <main>
     <section>
-        <p>Hello! Vous êtes <?php echo $_SESSION["nom"]. " nous sommes le ". date("d/m/Y");?></p>
+        <p class="success">Hello! Vous êtes <?php echo $_SESSION["nom"]. " nous sommes le ". date("d/m/Y");?></p>
     </section>
 </main>
 <?php
