@@ -13,7 +13,7 @@
     
         <?php
 
-            include_once("./src/bdd.inc.php");
+            include_once("./src/test_bdd.inc.php");
         ?>
     
     </main>

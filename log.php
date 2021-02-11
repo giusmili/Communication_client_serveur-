@@ -10,7 +10,7 @@
     <main>
         <section>
             <h2>Se connecter</h2>
-            <form action="<?php $_SERVER['PHP_SELF']?>" method="get">
+            <form action="log.php" method="post">
             <label for="mail">Adresse mail</label>
             <input type="text" name="mail" id="mail" placeholder="Adresse mail" aria-required="true" autofocus>
             <label for="password">Mot de passe</label>
@@ -31,19 +31,24 @@
                     $data['login'];
                     $data['password'];
                     
-                    if(isset($_GET['mail']) && isset($_GET['psw'])){
-                        $login = $_GET['mail'];
-                        $mdp = $_GET['psw'];
+                    if(isset($_POST['mail']) && isset($_POST['psw'])){
+                        $login = $_POST['mail'];
+                        $mdp = $_POST['psw'];
 
                         if(!$login || !$mdp){
-                            echo "<p class=\"warning\">Vous avez obliez votre mail ou password?</p>";
+                            echo "<p class=\"warning\">Vous avez oubliez votre mail ou password?</p>";
                         }
                         else if($login!=$data['login'] && $mdp!=$data['password']){
                             echo "<p class=\"warning\">Erreur login ou mot de passe?</p>";
                         }
                         else{
-                            echo "<p class=\"success\">Votre login est ".$login."
-                            votre mot de passe est ".md5($mdp)."</p>";
+                            //print "<a href=\"connection.php\">Go!!!</a>";
+                            $_SESSION['nom'] = $login;
+                            echo "<p class=\"success\">Votre login est ".$_SESSION['nom']."
+                            votre mot de passe est  ".md5($mdp);
+                            header("Location: connection.php");
+                            exit;
+                           
                         }
 
                         

@@ -10,7 +10,7 @@
     <main>
         <section>
             <h2>Inscription</h2>
-            <form action="<?php $_SERVER['PHP_SELF']?>" method="post">
+            <form action="inscription.php" method="post">
             <label for="mail">Adresse mail</label>
             <input type="text" name="mail" id="mail" placeholder="Adresse mail" aria-required="true" autofocus>
             <label for="password">Mot de passe</label>
