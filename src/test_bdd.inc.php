@@ -18,14 +18,14 @@
         //print_r($donnee);
     
 
-    echo '<h2>'.$donnee['nom'].'</h2>
+    echo '<h2>Votre produit : '.$donnee['marque'].'</h2>
     <figure>
         <figcaption>
             <ul>
                 <li>Marque '.$donnee['marque'].'</li>
                 <li>Capacité '.$donnee['capacite'].'</li>
-                <li>Consommation '.$donnee['consommation'].'KW</li>
-                <li>Prix '.$donnee['prix'].'&euro;</li>
+                <li>Consommation '.$donnee['consommation'].' KW</li>
+                <li>Prix '.$donnee['prix'].' &euro;</li>
                 <li><img src="'.$donnee['image'].'" alt="produit"></li>
 
             </ul>

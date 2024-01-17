@@ -1,12 +1,11 @@
 <?php
       $host = "localhost";
-      $dbase = "tuto";
+      $dbase = "cine";
       $login = "root";
       $password = "";
       try{
           $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-          $bdd = new PDO("mysql:host=$host;dbname=$dbase", "$login", "$password", 
-          array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$pdo_options));
+          $bdd = new PDO("mysql:host=$host;dbname=$dbase", "$login", "$password", array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$pdo_options));
 
           $response = $bdd ->query('SELECT * FROM acteurs INNER JOIN films ON films.id_acteurs = acteurs.id ');
           
