@@ -32,7 +32,7 @@
             </form>
         </section>
         <?php
-            //inclusion
+            //inclusion inscription_user.inc
             include_once __DIR__."/controller/inscription_user.inc.php";
             RegigisterUser::register();
         ?>

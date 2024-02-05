@@ -34,7 +34,7 @@
                     
                     $req = $_bdd->prepare('INSERT INTO inscription (login, password)VALUES(?,?)');
                     $req->execute(array($_POST['mail'], password_hash($_POST['psw'],PASSWORD_DEFAULT)));
-                    
+                    // aller vers log.php
                     echo "<p class=\"success\">Merci votre contenu est ajouté : 
                             <a href=\"log.php\" title=\"pub\">Connectez vous</a>
                             
